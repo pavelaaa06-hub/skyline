@@ -1,178 +1,221 @@
-css
-/* 1) Универсальный селектор */
-* {
-  box-sizing: border-box;
-}
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-/* 2) Градиентный фон */
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(120deg, #87CEEB, #C0C0C0, #0B3D5F);
+  height: 100%;
   margin: 0;
+  background-color: #0a0f1e;
 }
 
-/* 3) Цвета ссылок */
-a {
-  color: #1E3A5F;
-  text-decoration: none;
+.box {
+  width: 80%;
+  position: absolute;
+  margin-top: -450px;
+  overflow: auto;
 }
 
-a:visited {
-  color: #4A4A4A;
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
 }
 
-a:hover {
-  color: #FF6F61;
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
 }
 
-/* 4) Убираем маркеры у списка */
-ul {
-  list-style: none;
+#landing h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
   padding: 0;
   margin: 0;
 }
 
-/* 5) Контейнер */
-.container {
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -70px;
-}
-
-/* 6) Адаптивность */
-@media (min-width: 780px) {
-  .container {
-    width: 760px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 767px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-/* 7) Шапка */
-.landing-page header {
-  min-height: 80px;
-  display: flex;
-}
-
-@media (max-width: 767px) {
-  .landing-page header {
-    min-height: auto;
-    display: initial;
-  }
-}
-
-/* 8) Контейнер в шапке */
-.landing-page header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 767px) {
-  .landing-page header .container {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-/* 9) Ссылки-вкладки */
-.landing-page header .links {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 900px) {
-  .landing-page header .links {
-    text-align: center;
-    gap: 20px;
-  }
-}
-
-/* 10) Цвет вкладок */
-.landing-page header .links li {
-  margin-left: 10px;
-  color: #1E3A5F;
-  cursor: pointer;
-  transition: .3s;
-}
-
-/* 11) Последняя вкладка как кнопка */
-@media (max-width: 900px) {
-  .landing-page header .links li {
-    margin-left: auto;
-  }
-}
-.landing-page header .links li:last-child {
-  border-radius: 20px;
-  padding: 10px 20px;
-  color: #FFF;
-  background-color: #FF6F61;
-}
-
-/* 12) Расположение контента */
-.landing-page .content .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  min-height: calc(100vh - 80px);
-}
-
-@media (max-width: 767px) {
-  .landing-page .content .container {
-    gap: 0;
-    min-height: calc(100vh - 101px);
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 767px) {
-  .landing-page .content .info {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-}
-
-/* 13) Заголовок */
-.landing-page .content .info h1 {
+#landing h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
   color: white;
-  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: .9;
 }
 
-/* 14) Абзац */
-.landing-page .content .info p {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 15px;
-  color: white;
+#landing h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
 }
 
-/* 15) Кнопка внизу */
-.landing-page .content .info button {
-  border: 0;
-  border-radius: 20px;
-  padding: 12px 30px;
-  margin-top: 30px;
-  cursor: pointer;
-  color: #FFF;
-  background-color: #FF6F61;
+#landing p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-/* 16) Картинка */
-.landing-page .content .image img {
-  max-width: 120%;
-  margin-top: 50px;
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc-first {
+  color: #4a7db5;
+}
+.sc-second {
+  color: #e68c2e;
+}
+.sc-third {
+  color: #e68c2e;
+}
+
+#landing .title {
+  background: white;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#landing .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+#landing .block {
+  background: white;
+  padding: 6px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#landing .block-gray {
+  background: #f2f2f2;
+  padding: 6px;
+}
+
+#landing .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.70;
+}
+
+#landing .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("https://github.com/pavelaaa06-hub/skyline/raw/main/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#landing .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("https://github.com/pavelaaa06-hub/skyline/raw/main/2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#landing .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("https://github.com/pavelaaa06-hub/skyline/raw/main/3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#landing .line-break-first {
+  background: linear-gradient(60deg, #4a7db5, #ffd700, #dc143c);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#landing .line-break-second {
+  background: linear-gradient(60deg, #4a7db5, #ffd700, #dc143c);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#landing .line-break-third {
+  background: linear-gradient(60deg, #4a7db5, #ffd700, #dc143c);
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #landing .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #landing .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #landing h2 {
+    font-size: 30px;
+  }
+  #landing .block {
+    padding: 30px;
+  }
+  #landing .parallax-one, #landing .parallax-two, #landing .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #landing .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
 }
