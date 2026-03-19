@@ -1,0 +1,529 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8"></meta>
+
+  <title>Toyota Mark II</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"></link>
+  https://rawcdn.githack.com/pavelaaa06-hub/skyline/commit/05d302d4d1eb220ee494f96a57d6b069cc04d75c
+  <style>
+   * {
+
+    box-sizing: border-box;
+
+}
+html, body {
+
+    font-family: 'Open Sans', sans-serif;
+
+    height: 100%;
+
+    margin: 0;
+
+  background: url("https://github.com/pavelaaa06-hub/skyline/raw/main/маркуша.jpg");
+
+  background-size: cover;
+  .box {
+
+    width: 100%;
+
+    padding-right: 15px;
+
+    padding-left: 15px;
+
+    margin: auto;
+	.landing {
+
+    position: relative;
+
+    background-color: transparent;
+
+}
+
+.landing .header {
+
+    display: inline;
+
+    padding: 10px 0 0;
+
+    position: relative;
+
+}
+
+
+.landing .header .links {
+
+    display: inline;
+
+    padding: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+    text-align: right;
+
+}
+
+
+
+.landing .header .links li {
+
+    display: inline-block;
+
+    margin-left: 5px;
+
+    cursor: pointer;
+
+}
+
+.landing .header .links li:last-child {
+
+    border: 0;
+
+    border-radius: 20px;
+
+    padding: 10px 18px;
+
+    color: #8A2BE2;
+
+    background-color: #E6E6FA;
+
+    font-size: 18px;
+
+}
+
+.landing .info {
+
+    width: 100%;
+
+    float: left;
+
+    margin-top: 130px;
+
+}
+
+.landing .info h1 {
+
+    font-size: 44px;
+
+    margin: 0 0 20px;
+
+    line-height: 1.4;
+
+    color: white;
+
+}
+
+.landing .info p {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+    color: aqua;
+
+}
+
+.landing .info button {
+
+    border: 0;
+
+    border-radius: 20px;
+
+    padding: 12px 30px;
+
+    margin-top: 30px;
+
+    cursor: pointer;
+
+    color: #000000;
+
+    background-color: #fff0f5;
+
+}
+.clearfix {
+
+  clear: both;
+
+}
+
+
+
+.container {
+
+  display: block;
+
+  color: transparent;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+}
+h2 {
+
+  font-weight: normal;
+
+  letter-spacing: .125rem;
+
+  text-transform: lowercase;
+
+  color: white;
+
+}
+
+
+
+li {
+
+  display: inline-block;
+
+  font-size: 1.5em;
+
+  list-style-type: none;
+
+  padding: 1em;
+
+  text-transform: lowercase;
+
+  color: yellow;
+
+  font-size: 18px;
+
+}
+
+li span {
+
+  display: block;
+
+  font-size: 4.5rem;
+
+}
+@media all and (max-width: 768px) {
+
+  h2 {
+
+    font-size: calc(1.5rem * var(--smaller));
+
+  }
+
+  li {
+
+    font-size: calc(1.125rem * var(--smaller));
+
+  }
+
+  li span {
+
+    font-size: calc(3.375rem * var(--smaller));
+
+  }
+
+}
+button:focus {
+
+  outline: none;
+
+}
+
+
+
+#spoiler_button {
+
+ border: 0;
+
+    border-radius: 20px;
+
+    padding: 10px 18px;
+
+    color: #FDF5E6;
+
+    background-color: #4B0082;
+
+    font-size: 18px;
+
+}
+
+
+
+#spoiler_button:hover {
+
+border: 0;
+
+    border-radius: 20px;
+
+    padding: 10px 18px;
+
+    color: #FDF5E6FDF5E6;
+
+    background-color: #4B0082;
+
+    font-size: 18px;
+
+}
+
+
+
+#spoiler_button:active {
+
+  border: 0;
+
+    border-radius: 20px;
+
+    padding: 10px 18px;
+
+    color: #FDF5E6;
+
+    background-color: #4B0082;
+
+    font-size: 18px;
+
+}
+
+
+
+  .fadein, .fadeout {
+
+  height: 0;
+
+  -moz-transition: opacity 1s ease-in-out;
+
+  -o-transition: opacity 1s ease-in-out;
+
+  -webkit-transition: opacity 1s ease-in-out;
+
+
+
+  opacity: 0;  
+
+}
+
+
+
+.fadein {
+
+  height: 100%;
+
+  opacity: 1;
+
+}
+#additional p {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+    color: aqua;
+
+}
+</style>
+</head>
+<body>
+<div class="landing">
+
+  <div class="box">
+  <div class="header">
+
+      <ul class="links">
+	  <li><a href="#place3" style="color: white;">Характристики</a></li>
+
+        <li><a href="#place4" style="color: blue;">Дилерская сеть</a></li>
+
+        <li><a href="#place5" style="color: pink;">Модель</a></li>
+
+        <li><a href="#place2" style="color: purple;">Наличие</a></li>
+
+        <li><a href="#place1" style="color: black;">Кастом</a></li>
+		</ul>
+
+    </div>
+	 <div class="info">
+
+      <h1>Легенда, проверенная временем</h1>
+
+      <p>Toyota Mark II — это не просто автомобиль, а настоящая легенда японского автопрома, завоевавшая сердца миллионов водителей по всему миру. Модель, которую мы представляем, сочетает в себе культовый дизайн 90-х и нулевых с непревзойденной инженерной надежностью Toyota. Это автомобиль для тех, кто ценит классические пропорции, мощный характер и по-настоящему «водительский» опыт за рулем.</p>
+
+      <p id="place1">Под капотом этого седана скрывается агрегат, который дарит уверенность на трассе и приятную упругость при разгоне. Но Mark II славится не только динамикой: продуманная шумоизоляция, комфортная подвеска и эргономичный салон делают каждую поездку, будь то ежедневная городская рутина или дальнее путешествие, по-настоящему комфортной. Вы получаете премиальный комфорт по разумной цене.</p>
+  <p id="place1">В нашем салоне представлены Toyota Mark II, прошедшие строжайший отбор. Мы сотрудничаем с проверенными поставщиками и дилерами, что гарантирует прозрачную историю каждого автомобиля и его техническую исправность. Каждая машина проходит предпродажную подготовку, поэтому вы можете быть уверены в ее надежности с первого дня.
+
+</p>
+    <p id="place1">Мы знаем, что поиск достойного «Марка» в хорошем состоянии может занять месяцы. Чтобы вы быстрее сели за руль своего автомобиля, наши дилеры запустили специальную акцию. При покупке Toyota Mark II вы получаете расширенную гарантию на силовой агрегат и бесплатное первое техническое обслуживание. Это наша благодарность за выбор легендарного автомобиля.</p>
+	  <p id="place1">Количество автомобилей в идеальном состоянии ограничено, и спрос на них традиционно высок. Не упустите возможность приобрести настоящую японскую классику на выгодных условиях. Оставьте заявку на нашем сайте прямо сейчас, и наш менеджер подберет для вас лучший вариант из наличия или подскажет, как забронировать автомобиль под заказ по специальной цене.
+
+</p>
+<button id="spoiler_button" name="spoiler_button" type="button">название</button>
+<div class="fadeout" id="spoiler_text">
+
+ <p>Техническое совершенство:
+Toyota Mark II оснащается рядными 6-цилиндровыми двигателями (серии 1JZ/2JZ), задним приводом и независимой подвеской, что обеспечивает эталонную управляемость и ресурс. В зависимости от комплектации автомобиль предлагает кожаный салон, электроприводы и климат-контроль, подтверждая статус бизнес-класса 90-х.
+
+Почему выбирают нас:
+Мы являемся официальными партнерами крупных поставщиков японских авто. Каждый автомобиль перед продажей проходит 140-балльную диагностику. Прозрачное оформление сделки, помощь в постановке на учет и полное юридическое сопровождение — стандарт нашей работы.
+
+Детали акции "Первый владелец в РФ":
+Только до конца этого месяца при покупке Toyota Mark II вы получаете:
+
+Диагностическую карту и страховку ОСАГО в подарок.
+
+Скидку 15% на первый визит в наш технический центр.
+
+Возможность trade-in вашего старого автомобиля с дополнительной выгодой до 50 000 рублей.</p>
+
+    </div>
+	 </div>
+
+ </div>
+ <div class="clearfix">
+
+    </div>
+
+</div>
+<div class="container" id="place2">
+
+  <h2 id="headline">До окончания акции осталось</h2>
+
+  <div id="countdown">
+
+    <ul>
+
+      <li><span id="days"></span>дней</li>
+
+      <li><span id="hours"></span>часов</li>
+
+      <li><span id="minutes"></span>минут</li>
+
+      <li><span id="seconds"></span>секунд</li>
+
+    </ul>
+
+  </div>
+
+</div>
+<div id="additional">
+
+  <p>Toyota Mark II — это не просто автомобиль, а настоящая легенда японского автопрома, завоевавшая сердца миллионов водителей по всему миру.</p>
+
+<br>
+
+ <p>Под капотом этого седана скрывается агрегат, который дарит уверенность на трассе и приятную упругость при разгоне.</p>
+
+<br>
+
+<p>В нашем салоне представлены Toyota Mark II, прошедшие строжайший отбор. Мы сотрудничаем с проверенными поставщиками и дилерами, что гарантирует прозрачную историю каждого автомобиля и его техническую исправность.</p>
+
+</div>   
+<script>      
+(function () {
+
+  const second = 1000,
+
+        minute = second * 60,
+
+        hour = minute * 60,
+
+        day = hour * 24;
+let today = new Date(),
+
+      dd = String(today.getDate()).padStart(2, "0"),
+
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+
+      yyyy = today.getFullYear(),
+
+      nextYear = yyyy + 1,
+
+      dayMonth = "05/15/",  //дата окончания
+
+      date = dayMonth + yyyy;
+
+  
+
+  today = mm + "/" + dd + "/" + yyyy;
+
+  if (today > date) {
+
+    date = dayMonth + nextYear;
+
+  }
+    const countDown = new Date(date).getTime(),
+
+      x = setInterval(function() {    
+
+
+
+        const now = new Date().getTime(),
+
+              distance = countDown - now;
+
+
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+
+
+        if (distance < 0) {
+
+          document.getElementById("headline").innerText = "Акция!";
+
+          document.getElementById("countdown").style.display = "none";
+
+          document.getElementById("content").style.display = "block";
+
+          clearInterval(x);
+
+        }
+
+        //seconds
+
+      }, 0)
+
+  }());
+   var divToggleVis = document.getElementById('spoiler_text');
+
+var button = document.getElementById('spoiler_button');
+
+
+
+button.onclick = function() {
+
+    if (divToggleVis.className === 'fadeout') {
+
+        divToggleVis.className = 'fadein';
+
+    } else {
+
+        divToggleVis.className = 'fadeout';
+
+    }
+
+
+
+    if (button.innerHTML === 'узнать') {
+
+        button.innerHTML = 'скрыть';
+
+    } else {
+
+        button.innerHTML = 'узнать';
+
+    }
+
+};
+</script>
+</body>
+
+</html>
+
